@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Chaitra S</title>
+  <link rel="stylesheet" href="../css/about-me.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="intro">
+      <h1>About Me</h1>
+      <h2>Hi there, I’m <span>Chaitra S</span></h2>
+      <p>A Senior DevOps Engineer with a passion for automation, secure CI/CD practices, and building scalable infrastructure. With over 3.5 years of experience, I specialize in crafting robust DevOps pipelines, managing cloud-native infrastructure, and leading GitHub Enterprise governance in highly regulated environments.</p>
+    </section>
+
+    <section class="what-i-do">
+      <h2>What I Do</h2>
+      <ul>
+        <li>Deliver software faster with automated pipelines</li>
+        <li>Maintain secure and compliant workflows using GitHub Actions and SAST tools</li>
+        <li>Design modular, reusable CI/CD templates for scale</li>
+        <li>Build cloud-native environments using Terraform, Docker, Kubernetes, and Ansible</li>
+        <li>Ensure governance and traceability with advanced GitHub admin practices</li>
+      </ul>
+    </section>
+
+    <section class="tools">
+      <h2> My Core Tools & Platforms</h2>
+      <p><strong>Cloud:</strong> AWS (EC2, S3, IAM), GCP (GKE, Cloud Run, IAM)</p>
+      <p><strong>DevOps:</strong> GitHub Actions, Jenkins, Terraform, Ansible, Docker, Kubernetes</p>
+      <p><strong>Scripting:</strong> Python, Bash, YAML, Groovy</p>
+      <p><strong>Governance:</strong> GitHub Monorepo Management, CODEOWNERS, Triple-Gate Approval, Audit-Friendly CI/CD</p>
+    </section>
+
+    <section class="philosophy">
+      <h2>My Work Philosophy</h2>
+      <p>“Automation should be meaningful, not just fast. Secure by design. Scalable by structure.”</p>
+      <p>I thrive in fast-paced, compliance-heavy environments where cross-functional collaboration and continuous improvement are key. I value clean, reusable code and believe DevOps is as much about people and processes as it is about tools.</p>
+    </section>
+
+    <section class="how-i-work">
+      <h2>How I Work</h2>
+      <ul>
+        <li> I’m an ambivert who loves meaningful problem-solving conversations</li>
+        <li> I iterate, test, and adapt workflows for developer efficiency</li>
+        <li> I champion DevSecOps practices with integrated security and governance</li>
+        <li> I build developer-friendly CI/CD platforms that scale with business needs</li>
+      </ul>
+    </section>
+
+    <section class="connect">
+      <h2> Let’s Connect</h2>
+      <p>I'm always open to opportunities to collaborate, innovate, and learn.</p>
+      <p>
+         <a href="mailto:chaitra.srinivas610@gmail.com"><img src="../assets/img/contact-me/mailbox-4.webp" alt="E mail contact"></a> |
+         <a href="https://www.linkedin.com/in/chaitrasrinivas-cs/"><img src="../assets/img/contact-me/linkedin-2.png" alt="Linkedin"></a> |
+         <a href="https://github.com/Chai-var"><img src="../assets/img/contact-me/github-logo-2.png" alt="GitHub"></a>
+      </p>
+    </section>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("visible");
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => observer.observe(section));
+});
+
+  </script>
+  <a href="../index.html" class="home-btn">← Home</a>
+  <!-- <button id="topBtn"><a href="../index.html" alt="home-button"><span>Home</span></a></button> -->
+  <!-- <script>
+    window.onscroll = () => {
+  const btn = document.getElementById("topBtn");
+  btn.style.display = window.scrollY > 300 ? "block" : "none";
+};
+
+document.getElementById("topBtn").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+  </script> -->
+</body>
+</html>
